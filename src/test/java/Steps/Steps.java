@@ -31,11 +31,12 @@ loginPage.clicarPopUp();
     @Quando("selecionar o produto")
     public void selecionarOProduto() throws InterruptedException {
         produtos.clicarNoProduto();
+        produtos.code();
 
     }
     @Então("conclua minha compra")
     public void concluaMinhaCompra() throws InterruptedException {
-        produtos.finalizarCompra();
+       // produtos.finalizarCompra();
 
     }
 }
